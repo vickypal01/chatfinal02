@@ -1,0 +1,100 @@
+.modal_mainContainer {
+    width: 28vw;
+    height: 70vh;
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e09393;
+    border-radius: .5rem;
+    border: 2px solid rgb(12, 1, 1);
+    padding: .5rem .4rem;
+}
+
+.closeModalBtn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    position: absolute;
+    padding: 0 .58rem;
+    border-radius: 50%;
+    color: rgb(223, 126, 126);
+    top: -2rem;
+    right: -3rem;
+    font-family: var(--poppins-font);
+}
+.closeModalBtn:hover {
+    background-color: #094ef0;
+    cursor: pointer;
+}
+
+.searchbox {
+    height: 2.3rem;
+    margin-bottom: 1rem;
+}
+.searchbox>input {
+    width: 100%;
+    height: 100%;
+    padding: .1rem .5rem;
+    font-family: var(--mukta-font);
+    font-size: .9rem;
+
+}
+.searchbox>input::placeholder{
+    color: rgb(223, 28, 28);
+    font-family: var(--mukta-font);
+    font-size: 1rem;
+}
+.searchbox>input:focus {
+    outline: none;
+    border: 1.6px solid #180809;
+}
+
+.friends_list {
+    height: 85%;
+    list-style: none;
+    padding-left: 0;
+    color: rgb(5, 1, 1);
+    overflow-y: scroll;
+}
+.friends_list::-webkit-scrollbar {
+    width: 5px;
+}
+.friends_list::-webkit-scrollbar-track {
+    background-color: rgb(184, 179, 179);
+    border-radius: 5px;
+}
+.friends_list::-webkit-scrollbar-thumb {
+    background-color: rgb(41, 39, 39);
+    border-radius: 5px;
+}
+.friends_list li {
+    width: 100%;
+    height: 3.3rem;
+    background-color: #1b2439;
+    border-radius: .3rem;
+    margin-bottom: 2px;
+    padding: 0 .5rem;
+    display: flex;
+    align-items: center;
+}
+.friends_list li:hover {
+    background-color: #293653;
+} 
+.profileImg {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+.profileImg>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user_name {
+    padding-left: .5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--montserrat-font);
+} 
